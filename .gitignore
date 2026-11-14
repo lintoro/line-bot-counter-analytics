@@ -1,0 +1,19 @@
+# 機敏設定與憑證隔離 (GLOBAL_RULES)
+.env
+.env.*
+!.env.example
+.clasp.json
+!.clasp.json.sample
+credentials.json
+*.pem
+*.key
+node_modules/
+scratch/
+
+# 禁止上推至 GitHub 的商業範本與原始報表資料
+RAWDATA/
+
+# 禁止上推至 GitHub 的私人交接文件與機敏環境備忘
+docs_private/
+env.properties
+!env.properties.sample
